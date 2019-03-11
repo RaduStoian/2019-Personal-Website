@@ -13,10 +13,12 @@ $off-color :#fff;
 }
 
 .button-style{
+    display: inline-block;
     background-color: $off-color;
+    color: $main-color;
     border:1px solid $main-color;
-    padding:5px 10px;
-    font-weight:500;
+    text-decoration: none;
+    padding:5px 10px 3px 10px;
     margin:20px;
     border-radius: 15px;
     transition: 0.3s;
@@ -26,8 +28,23 @@ $off-color :#fff;
         background-color: $main-color;
         color: $off-color;
         transition: 0.3s;
+        cursor: pointer;
     }
 }
+
+.secondary-button-style{
+    background-color: $main-color;
+    color:$off-color;
+    border:1px solid $off-color;
+   
+    &:hover{
+        background-color: $off-color;
+        color: $main-color;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+}
+
 
 .logo-img-style {
     width:45px;
@@ -47,7 +64,12 @@ $off-color :#fff;
             font-weight:600;
             color: $main-color;
             padding:5px 10px;
-
+            transition:0.3s;
+            
+        }
+        & :hover{
+            color:#888888;
+            transition:0.2s;
         }
     }
 }
@@ -82,6 +104,11 @@ $off-color :#fff;
     margin-bottom:20px;
 }
 
+.section-title-style{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
 .small-dividing-line-style{
     width:1000px;
     height:1px;
@@ -93,7 +120,7 @@ $off-color :#fff;
 
 
 //Skills 1
-.skills-1-container-style{
+.skills-container-style{
     margin:150px auto;
     max-width:1300px;
     display:grid;
@@ -113,29 +140,10 @@ $off-color :#fff;
 
             .main-skills-img-style{
                  width:120px;
-            }
+            }       
         }
-}
 
-.text-container-style{
-    padding:40px;
- }
-
-
-
-
-
-//Skills 2
-.skills-2-container-style{
-    margin:150px auto 10px auto;
-    max-width:1300px;
-    display:grid;
-    grid-template-columns: 50% 1fr;
-    justify-content: center;
-    justify-items: center;
-    align-items: center; 
-
-        .secondary-skills-img-container-style{
+        .skills-2-img-container-style{
             display:grid;
             width:100%;
             grid-template-columns: repeat(auto-fit,90px);
@@ -149,15 +157,35 @@ $off-color :#fff;
                 width:90px;
              }
         }
+        
 }
 
+.last-skills-container-style {
+    margin-bottom: 0px;
+    }
+    
+.extra-skills-img-style{
+    width:300px;
+}
+
+.text-container-style{
+    padding:40px;
+ }
+
+ 
 
 
+
+
+
+
+ 
 // Projects Section
 
+
 .skills-used-style{
-font-weight: 800;
-color: $secondary-color;
+    font-weight: 800;
+    color: $secondary-color;
 }
 
 .project-container-style{
@@ -167,10 +195,51 @@ color: $secondary-color;
     grid-template-columns: 300px 1fr;
     padding:20px;
     grid-gap:50px; 
-    bordeR:2px solid $main-color;
+    border:2px solid $main-color;
     border-radius: 150px;
 }
+
 .project-img-style{
     justify-self: right;
     align-self: center;
+}
+
+.project-reuse-logo-style{
+    width:200px;
+}
+
+//footer 
+.footer-style{
+    background-color: $main-color;
+    color: $off-color
+}
+
+.footer-p-style{
+    text-align: center;
+    width:1000px;
+    margin:20px auto;
+}
+
+.footer-title-style{
+    margin:0px auto;
+    padding:40px;
+    width:300px;
+}
+
+.centering-container{
+    margin:0 auto;
+    width:500px;
+    text-align: center;
+}
+
+.last-item{
+    padding-bottom:40px;
+    margin:0 auto;
+}
+
+.footer-hr{
+    margin:20px 0 30px 0;
+    border:0;
+    height:1px;
+    background-color: $off-color
 }
