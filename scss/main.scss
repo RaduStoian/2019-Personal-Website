@@ -1,6 +1,6 @@
 $main-color : #333333;
 $secondary-color : #868686;
-$background-color:#fff7f7;
+$background-color:white;
 $off-color: #fff;
 $box-shadow: 5px 5px 8px -4px rgba(51,51,51,0.5);
 
@@ -136,7 +136,7 @@ background-color:$background-color;
 }
 
 .small-dividing-line-style{
-    width:1000px;
+    width:80%;
     height:1px;
     margin:auto;
     border:none;
@@ -189,7 +189,7 @@ background-color:$background-color;
 }
 
 .last-skills-container-style {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     }
     
 .extra-skills-img-style{
@@ -207,11 +207,43 @@ background-color:$background-color;
  
 // Projects Section
 
+.multiple-projects-container-style{
+    display:grid;
+    overflow:none;
+    max-width:940px;
+    margin: 0 auto 100px auto;
+    grid-gap:20px;
+    padding:20px;
+    text-align: center;
+    grid-template-columns: repeat(auto-fill,300px);
+    grid-template-rows: auto;
 
+}
+
+.small-project-container-style{
+    text-align:center;
+    padding: 20px 0 0 0;
+    border:3px solid $main-color;
+    border-radius:14px;
+    
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+
+.small-project-img-style{
+    justify-self: center;
+    height:150px;
+}
+
+.small-project-title-style{
+    margin:-10px 0 0 0;
+}
 .skills-used-style{
     font-weight: 800;
     color: $secondary-color;
 }
+
 
 .project-container-style{
     display:grid;
@@ -219,9 +251,9 @@ background-color:$background-color;
     margin:0 auto 100px auto;
     grid-template-columns: 300px 1fr;
     padding:20px;
-    grid-gap:50px; 
+    grid-gap:40px; 
     border:2px solid $main-color;
-    border-radius: 150px;
+    border-radius: 500px;
 
     -webkit-box-shadow: $box-shadow;
     -moz-box-shadow: $box-shadow;
@@ -233,11 +265,11 @@ background-color:$background-color;
     align-self: center;
 }
 
+
+
 .project-reuse-logo-style{
     width:200px;
 }
-
-
 
 
 
