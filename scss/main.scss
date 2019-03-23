@@ -126,7 +126,7 @@ background-color:$background-color;
 
 .third-title-style{
     color: $main-color;
-    font-size:1.3rem;
+    font-size:1.5rem;
     margin-bottom:20px;
 }
 
@@ -149,7 +149,7 @@ background-color:$background-color;
 
 //Skills 1
 .skills-container-style{
-    margin:150px auto;
+    margin:50px auto;
     max-width:1300px;
     display:grid;
     grid-template-columns: 50% 1fr;
@@ -167,14 +167,14 @@ background-color:$background-color;
             align-items: center;
 
             .main-skills-img-style{
-                 width:120px;
+                 width:100px;
             }       
         }
 
         .skills-2-img-container-style{
             display:grid;
             width:100%;
-            grid-template-columns: repeat(auto-fit,90px);
+            grid-template-columns: repeat(auto-fit,100px);
             grid-template-rows: auto;
             grid-gap:20px;
             justify-content: center;   
@@ -182,18 +182,20 @@ background-color:$background-color;
             align-items: center; 
 
             .secondary-skills-img-style{
-                width:90px;
+                width:80px;
              }
         }
         
 }
 
 .last-skills-container-style {
-    margin-bottom: 50px;
+    max-width:1100px;
+    margin-bottom:-50px;
     }
     
 .extra-skills-img-style{
     max-width:400px;
+    max-height:260px;
 }
 
 .text-container-style{
@@ -211,13 +213,12 @@ background-color:$background-color;
     display:grid;
     overflow:none;
     max-width:940px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 50px auto;
     grid-gap:20px;
-    padding:20px;
     text-align: center;
+    align-content: center;
     grid-template-columns: repeat(auto-fill,300px);
     grid-template-rows: auto;
-
 }
 
 .small-project-container-style{
@@ -233,7 +234,7 @@ background-color:$background-color;
 
 .small-project-img-style{
     justify-self: center;
-    height:150px;
+    height:100px;
 }
 
 .small-project-title-style{
@@ -248,9 +249,8 @@ background-color:$background-color;
 .project-container-style{
     display:grid;
     max-width:1000px;
-    margin:0 auto 100px auto;
+    margin:0 auto 50px auto;
     grid-template-columns: 300px 1fr;
-    padding:20px;
     grid-gap:40px; 
     border:2px solid $main-color;
     border-radius: 500px;
@@ -268,7 +268,7 @@ background-color:$background-color;
 
 
 .project-reuse-logo-style{
-    width:200px;
+    max-width:200px;
 }
 
 
@@ -322,6 +322,15 @@ background-color:$background-color;
  }
 }
 
+
+@media only screen and (max-width: 1000px) { 
+
+    .multiple-projects-container-style{
+        max-width:620px;   
+    }
+}
+
+
 @media only screen and (max-width: 930px) { 
 
     //Skills 1
@@ -354,50 +363,52 @@ background-color:$background-color;
     display:block;
     max-width:360px;
     text-align:center;
-    margin:0 auto 100px auto;
-    padding:20px 0;
+    padding:40px 0 0 0;
     border-radius: 35px;
+ }
 
+ .project-img-style{
+    max-height: 150px;
  }
 }
 
+@media only screen and (max-width: 680px) { 
 
-@media only screen and (max-width: 525px) {
-//navigation
-.ul-style {
-    display:inline-block;;
-    list-style: none;
-    margin:20px 0 0 0;
-    text-align:center;
 
-    .nav-li-style {
-        float:none;
+        //navigation
+    .ul-style {
+        display:inline-block;;
+        list-style: none;
+        margin:20px 0 0 0;
+        text-align:center;
 
-        .nav-a-style {
-            text-decoration: none;
-            font-weight:600;
-            color: $main-color;
-            padding:5px 10px;
-            transition:0.3s;
-            
-        }
-        & :hover{
-            color:#888888;
-            transition:0.2s;
+        .nav-li-style {
+            float:none;
+
+            .nav-a-style {
+                text-decoration: none;
+                font-weight:600;
+                color: $main-color;
+                padding:5px 10px;
+                transition:0.3s;
+                
+            }
+            & :hover{
+                color:#888888;
+                transition:0.2s;
+            }
         }
     }
-}
-.hidden {
-    display:block;
-}
+    .hidden {
+        display:block;
+        width:100vw;
+         margin-bottom:3px;
+    }
 
-.small-dividing-line-style{
-width:100vw;
-margin-bottom:3px;
-}
-
-.logo-img-style{
-    display:none;
-}
-
+    .logo-img-style{
+        display:none;
+    }
+    .multiple-projects-container-style{
+        max-width:300px;   
+    }
 }
