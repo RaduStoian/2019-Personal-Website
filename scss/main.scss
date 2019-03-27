@@ -8,18 +8,25 @@ $box-shadow: 5px 5px 8px -4px rgba(51,51,51,0.5);
     margin: 0;
     padding: 0;
 }
+.off-color{
+    color:$off-color;
+}
+
+.main-color{
+    color:$main-color;
+}
 
 .font-style {
     font-family: 'Overpass', sans-serif;
     font-size:18px;
 }
 .max-width{
-max-width:1920px;
-margin:auto;
+    max-width:1920px;
+    margin:auto;
 }
 
 .background-color{
-background-color:$background-color;
+    background-color:$background-color;
 }
 
 .hidden {
@@ -59,17 +66,52 @@ background-color:$background-color;
     }
 }
 
+.small-dividing-line-style{
+    width:80%;
+    height:1px;
+    margin:auto;
+    border:none;
+    background-color:$main-color;
+}
 
+.separating-bar-img-style{
+    width:100%;
+}
+
+
+
+// main showcase 
+.menu-img-style{
+    display:none;
+}
+.main-showcase {
+    height:100vh;
+    background-image: url("/images/show.jpg");
+    background-position: center;
+    border: 1px solid $main-color;
+}
+
+.showcase-centering-container{ 
+    position: absolute;
+    top:calc(50vh - 300px);
+    left:calc(50vw - 310px); 
+   // background-color:hsla(1, 0, 3, 0.7);
+   // border:10px solid $off-color;
+ 
+}
 
 
 //navigation
 .logo-img-style {
     width:45px;
-    float:right;
-    margin:5px;
+    position: absolute;
+    top:5px;
+    right:5px;
 
 }
 .ul-style {
+    position: absolute;
+    top:0px;
     display:inline-block;;
     list-style: none;
     margin:20px 0 0 0;
@@ -80,13 +122,13 @@ background-color:$background-color;
         .nav-a-style {
             text-decoration: none;
             font-weight:600;
-            color: $main-color;
+            color: $off-color;
             padding:5px 10px;
             transition:0.3s;
             
         }
         & :hover{
-            color:#888888;
+            color: $secondary-color;
             transition:0.2s;
         }
     }
@@ -95,16 +137,10 @@ background-color:$background-color;
 
 
 
-
-.separating-bar-img-style{
-    width:100%;
-}
-
 .main-title-style{
     font-size:3rem;
-    color: $main-color;
+    color: $off-color;
     text-align:center;
-    margin-top:100px;
     padding:20px;
 }
 
@@ -117,15 +153,14 @@ background-color:$background-color;
 }
 
 .secondary-title-style{
-    color: $main-color;
+    color: $off-color;
     font-size:2rem;
     text-align:center;
-    margin-bottom:100px;
+
     padding:20px;
 }
 
 .third-title-style{
-    color: $main-color;
     font-size:1.5rem;
     margin-bottom:20px;
 }
@@ -135,13 +170,14 @@ background-color:$background-color;
     margin-bottom:40px;
 }
 
-.small-dividing-line-style{
-    width:80%;
-    height:1px;
-    margin:auto;
-    border:none;
-    background-color:$main-color;
+.showcase-last{
+position: absolute;
+bottom:10px;
+left:calc(50vw - 75px);
 }
+
+
+
 
 
 
@@ -196,6 +232,7 @@ background-color:$background-color;
 .extra-skills-img-style{
     max-width:400px;
     max-height:260px;
+    margin:auto;
 }
 
 .text-container-style{
@@ -208,6 +245,10 @@ background-color:$background-color;
 
  
 // Projects Section
+
+.project-title-style{
+    color:$main-color
+}
 
 .multiple-projects-container-style{
     display:grid;
@@ -338,9 +379,10 @@ background-color:$background-color;
 .skills-container-style{
     margin:50px auto;
     max-width:600px;
-    display:block;  
-        
+    display:block;     
+    text-align: center;
 }
+
 .third-title-style{
     text-align: center;
 }
@@ -355,7 +397,9 @@ background-color:$background-color;
     width:80%;
 }
 .extra-skills-img-style{
-    max-width:250px;
+    max-width:300px;
+    max-height:250px;
+    margin:0px auto;
 }
     
     // Projects Section
@@ -375,9 +419,24 @@ background-color:$background-color;
 @media only screen and (max-width: 680px) { 
 
 
+    .menu-img-style{
+        display:block;
+        width:25px;
+        position: absolute;
+        top:15px;
+        left:15px;
+    }
+
+    .showcase-centering-container{
+        position: initial;
+        margin-top:calc(50vh - 300px);
+        border:10px solid $off-color;
+    }
+
         //navigation
     .ul-style {
-        display:inline-block;;
+        z-index: 100;
+        display:none;
         list-style: none;
         margin:20px 0 0 0;
         text-align:center;
@@ -400,15 +459,23 @@ background-color:$background-color;
         }
     }
     .hidden {
-        display:block;
+        display:none;
         width:100vw;
          margin-bottom:3px;
     }
 
-    .logo-img-style{
-        display:none;
-    }
     .multiple-projects-container-style{
         max-width:300px;   
     }
+
+    
+.project-img-style{
+    max-width: 100px;
+}
+
+
+
+.project-reuse-logo-style{
+    max-width:100px;
+}
 }

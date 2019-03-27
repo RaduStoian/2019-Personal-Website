@@ -1,0 +1,22 @@
+$main-color : #333333;
+$secondary-color : #868686;
+$background-color:white;
+$off-color: #fff;
+$box-shadow: 5px 5px 8px -4px rgba(51,51,51,0.5);
+
+
+.gallery-image-style {
+    display:block;
+    max-width:95%;
+    max-height:800px;
+    margin:50px auto;
+}
+
+.gallery-main-title-style {
+    margin:0px;
+    padding:100px 0;
+}
+
+.main-gallery-showcase{
+   background-color:$main-color;
+}

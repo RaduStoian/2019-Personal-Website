@@ -1,0 +1,12 @@
+.gallery-image-style {
+  display: block;
+  max-width: 95%;
+  max-height: 800px;
+  margin: 50px auto; }
+
+.gallery-main-title-style {
+  margin: 0px;
+  padding: 100px 0; }
+
+.main-gallery-showcase {
+  background-color: #333333; }
