@@ -357,7 +357,11 @@ left:calc(50vw - 75px);
 }
 
 //media queries
-
+@media only screen and (min-width: 679px) { 
+    .ul-style{
+        display: block;
+    }
+}
 @media only screen and (min-width: 1921px) { 
 .max-width{
     border-left:7px solid $main-color;
@@ -365,14 +369,12 @@ left:calc(50vw - 75px);
  }
 }
 
-
 @media only screen and (max-width: 1000px) { 
 
     .multiple-projects-container-style{
         max-width:620px;   
     }
 }
-
 
 @media only screen and (max-width: 930px) { 
 
@@ -419,65 +421,67 @@ left:calc(50vw - 75px);
 }
 
 @media only screen and (max-width: 680px) { 
-
+    .font-style {
+        font-family: 'Overpass', sans-serif;
+        font-size:15px;
+    }
 
     .menu-img-style{
+        z-index: 20;
         display:block;
         width:25px;
         position: absolute;
         top:15px;
         left:15px;
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .showcase-centering-container{
         position: initial;
         margin-top:calc(50vh - 300px);
-        border:10px solid $off-color;
     }
 
         //navigation
     .ul-style {
-        z-index: 100;
+        z-index: 10;
         display:none;
+        width:100vw;
+        margin:auto;
         list-style: none;
-        margin:20px 0 0 0;
         text-align:center;
+        background-color: $main-color;
 
         .nav-li-style {
             float:none;
+            margin:50px 150px;
 
             .nav-a-style {
                 text-decoration: none;
                 font-weight:600;
-                color: $main-color;
+                color: $off-color;
                 padding:5px 10px;
                 transition:0.3s;
-                
-            }
-            & :hover{
+
+                  &:hover{
                 color:#888888;
                 transition:0.2s;
+                }
             }
+          
         }
     }
-    .hidden {
-        display:none;
-        width:100vw;
-         margin-bottom:3px;
-    }
 
-    .multiple-projects-container-style{
+    .multiple-projects-container-style {
         max-width:300px;   
     }
 
-    
-.project-img-style{
-    max-width: 100px;
-}
+    .project-img-style{
+        max-width: 100px;
+    }
 
-
-
-.project-reuse-logo-style{
-    max-width:100px;
-}
+    .project-reuse-logo-style{
+        max-width:100px;
+    }
 }
