@@ -80,30 +80,19 @@
 .separating-bar-img-style {
   width: 100%; }
 
-.menu-img-style {
+.hidden {
   display: none; }
 
-.main-showcase {
-  height: 100vh;
-  background-image: url("/images/show.jpg");
-  background-position: center;
-  border: 1px solid #333333; }
-
-.showcase-centering-container {
-  position: absolute;
-  top: calc(50vh - 300px);
-  left: calc(50vw - 310px); }
-
 .logo-img-style {
+  z-index: 30;
   width: 45px;
   position: absolute;
-  top: 5px;
-  right: 5px; }
+  top: 10px;
+  right: 10px; }
 
 .ul-style {
   position: absolute;
   top: 0px;
-  display: inline-block;
   list-style: none;
   margin: 20px 0 0 0; }
   .ul-style .nav-li-style {
@@ -131,6 +120,20 @@
   left: calc(50vw - 75px); }
   .showcase-last:hover {
     cursor: pointer; }
+
+.menu-img-style {
+  display: none; }
+
+.main-showcase {
+  height: 100vh;
+  background-image: url("/images/show.jpg");
+  background-position: center;
+  border: 1px solid #333333; }
+
+.showcase-centering-container {
+  position: absolute;
+  top: calc(50vh - 300px);
+  left: calc(50vw - 310px); }
 
 .skills-container-style {
   margin: 50px auto;
@@ -259,7 +262,7 @@
   height: 1px;
   background-color: #fff; }
 
-@media only screen and (min-width: 679px) {
+@media only screen and (min-width: 681px) {
   .ul-style {
     display: block; } }
 
@@ -305,10 +308,11 @@
   .menu-img-style {
     z-index: 20;
     display: block;
-    width: 25px;
     position: absolute;
-    top: 15px;
-    left: 15px; }
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    padding: 10px; }
     .menu-img-style:hover {
       cursor: pointer; }
   .showcase-centering-container {
@@ -316,15 +320,14 @@
     margin-top: calc(50vh - 300px); }
   .ul-style {
     z-index: 10;
-    display: none;
-    width: 100vw;
+    width: 100%;
     margin: auto;
     list-style: none;
     text-align: center;
     background-color: #333333; }
     .ul-style .nav-li-style {
       float: none;
-      margin: 50px 150px; }
+      margin: 50px auto; }
       .ul-style .nav-li-style .nav-a-style {
         text-decoration: none;
         font-weight: 600;

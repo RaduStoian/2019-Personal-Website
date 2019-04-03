@@ -1,5 +1,40 @@
 
 
+
+const menuImg = document.getElementById("menu-img");
+const ulJs = document.getElementById("ul-js");
+const mainShowcase = document.getElementById("main-showcase");
+const navAStyle = document.getElementsByTagName("li");
+
+
+    //toggles mobile menu when tapping menu icon
+   menuImg.onclick = () => {
+
+        ulJs.classList.toggle("hidden");
+    }
+
+    // hides mobile menu when taping outside menu
+    mainShowcase.onclick = () => {
+        
+        ulJs.classList.add("hidden");
+    }
+
+
+    $(function(){ //Jquery starts
+
+        // hides mobile menu when tapping a link
+        $('.nav-a-style').click(function() {
+            ulJs.classList.add("hidden");
+          });
+        
+    }); //JQYERY ENDS
+
+
+
+
+
+
+// JQUERY
 $(function(){
 
 
@@ -17,31 +52,9 @@ $(function(){
     });
 
 
-
-
-    // Mobile - display nav when clicking the menu icon
-    $('.menu-img-style').click(function(event) {
-
-        if ( $(".ul-style").css('display', 'none')) {
-
-            $(".ul-style").css('display', 'block')
-        } 
-
-        else if ( $(".ul-style").css('display', 'block')) {
-
-            $(".ul-style").css('display', 'none')
-        } 
-    });
-
-    //Mobile - hide nav when clicking a nav li
-    $('.nav-a-style').click (function(event) {
-        
-        if ( $(".ul-style").css('display', 'block')) {
-
-            $(".ul-style").css('display', 'none')
-        } 
-    });
-
-
+    // hides mobile menu when tapping a link
+    $('.nav-a-style').click(function() {
+        ulJs.classList.add("hidden");
+      });
     
-});
+}); //JQYERY ENDS

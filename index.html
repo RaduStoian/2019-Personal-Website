@@ -8,7 +8,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
-    <script src="./javascript/index.js"></script>
 
     <link rel="icon" href="./images/round-logo.png" type="image/x-icon"/>
     <link rel="shortcut icon" href="./images/round-logo.png" type="image/x-icon"/>
@@ -16,18 +15,15 @@
     <link href="https://fonts.googleapis.com/css?family=Overpass:100,300,400,700,800,900" rel="stylesheet">
 
 
-    <script src="addons/jquery.js"></script>
-    <script src="javascript/index.js"></script>
-
 </head>
+
+
+
+
 <body class="font-style max-width background-color">
   
-
-        <!--Main Showcase-->
-<section class="main-showcase" id="main-showcase"> 
-
-        <!--Navigation-->
-    <ul class="ul-style">
+  <!--Navigation-->
+    <ul class="ul-style hidden" id="ul-js">
         
         <li class="nav-li-style"><a class="nav-a-style" href="#">HOME</a></li> 
         <li class="nav-li-style"><a class="nav-a-style" href="https://github.com/RaduStoian" target="_blank" >GITHUB</a></li>
@@ -37,11 +33,16 @@
         <li class="nav-li-style"><a class="nav-a-style" href="#about-section">ABOUT ME</a></li>    
     </ul>
 
-    <img class="menu-img-style" src="./images/menu.png">
+    <img class="menu-img-style" id="menu-img" src="./images/menu.png">
     <img class="logo-img-style" src="./images/round-logo.png">
+    
+        <!--Main Showcase-->
+<section class="main-showcase" id="main-showcase"> 
+
+      
 
  
-    <!--Welcome Screen-->
+    <!--Titles and Img container-->
     <div class="showcase-centering-container">
         <h1 class="main-title-style">Radu Stoian (Mike)</h1>
         <img class="main-welcome-picture-style" src="./images/round-face.png">
@@ -312,6 +313,10 @@
      
 
 </footer>
+
+<script src="addons/jquery.js"></script>
+<script src="javascript/index.js"></script>
+
 
 </body>
 </html>
