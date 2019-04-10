@@ -10,7 +10,7 @@
 
 .font-style {
   font-family: 'Overpass', sans-serif;
-  font-size: 18px; }
+  font-size: 17px; }
 
 .max-width {
   max-width: 1920px;
@@ -23,14 +23,14 @@
   display: none; }
 
 .main-title-style {
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: #fff;
   text-align: center;
   padding: 20px; }
 
 .secondary-title-style {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
   padding: 20px; }
 
@@ -92,9 +92,8 @@
 
 .ul-style {
   position: absolute;
-  top: 0px;
-  list-style: none;
-  margin: 20px 0 0 0; }
+  top: 15px;
+  list-style: none; }
   .ul-style .nav-li-style {
     float: left; }
     .ul-style .nav-li-style .nav-a-style {
@@ -107,33 +106,34 @@
       color: #868686;
       transition: 0.2s; }
 
-.main-welcome-picture-style {
-  display: block;
-  width: 150px;
-  margin: 10px auto 20px auto;
-  border: none;
-  transition: 0.5s; }
-
-.showcase-last {
-  position: absolute;
-  bottom: 10px;
-  left: calc(50vw - 75px); }
-  .showcase-last:hover {
-    cursor: pointer; }
-
 .menu-img-style {
   display: none; }
 
 .main-showcase {
+  display: block;
   height: 100vh;
   background-image: url("/images/show.jpg");
   background-position: center;
-  border: 1px solid #333333; }
+  background-repeat: none;
+  background-size: 2120px; }
 
 .showcase-centering-container {
+  padding-top: calc(50vh - 200px); }
+
+.main-welcome-picture-style {
+  display: block;
+  width: 150px;
+  margin: 10px auto 20px auto;
+  border: none; }
+
+.showcase-last {
+  display: block;
+  width: 140px;
   position: absolute;
-  top: calc(50vh - 300px);
-  left: calc(50vw - 310px); }
+  left: calc(50vw - 75px);
+  bottom: 10px; }
+  .showcase-last:hover {
+    cursor: pointer; }
 
 .skills-container-style {
   margin: 50px auto;
@@ -156,7 +156,7 @@
   .skills-container-style .skills-2-img-container-style {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-columns: repeat(auto-fit, 120px);
     grid-template-rows: auto;
     grid-gap: 20px;
     justify-content: center;
@@ -172,7 +172,7 @@
 .extra-skills-img-style {
   max-width: 400px;
   max-height: 260px;
-  margin: auto; }
+  margin: 0 auto; }
 
 .text-container-style {
   padding: 40px; }
@@ -182,7 +182,7 @@
 
 .multiple-projects-container-style {
   display: grid;
-  overflow: none;
+  overflow: hidden;
   max-width: 940px;
   margin: 0 auto 50px auto;
   grid-gap: 20px;
@@ -195,14 +195,14 @@
   text-align: center;
   padding: 20px 0 0 0;
   border: 3px solid #333333;
-  border-radius: 14px;
+  border-radius: 18px;
   -webkit-box-shadow: 5px 5px 8px -4px rgba(51, 51, 51, 0.5);
   -moz-box-shadow: 5px 5px 8px -4px rgba(51, 51, 51, 0.5);
   box-shadow: 5px 5px 8px -4px rgba(51, 51, 51, 0.5); }
 
 .small-project-img-style {
   justify-self: center;
-  height: 100px; }
+  max-height: 100px; }
 
 .small-project-title-style {
   margin: -10px 0 0 0; }
@@ -244,7 +244,7 @@
   color: #fff;
   margin: 0px auto;
   padding: 40px;
-  width: 300px; }
+  max-width: 300px; }
 
 .centering-container {
   margin: 0 auto;
@@ -276,6 +276,12 @@
     max-width: 620px; } }
 
 @media only screen and (max-width: 930px) {
+  .showcase-last {
+    display: block;
+    width: 140px;
+    position: absolute;
+    left: calc(50vw - 80px);
+    bottom: 10px; }
   .skills-container-style {
     margin: 50px auto;
     max-width: 600px;
@@ -286,12 +292,8 @@
   .last-skills-container-style {
     margin-bottom: 0px;
     text-align: center; }
-  .small-dividing-line-style {
-    width: 80%; }
   .extra-skills-img-style {
-    max-width: 300px;
-    max-height: 250px;
-    margin: 0px auto; }
+    max-width: 300px; }
   .project-container-style {
     display: block;
     max-width: 360px;
@@ -315,13 +317,13 @@
     padding: 10px; }
     .menu-img-style:hover {
       cursor: pointer; }
-  .showcase-centering-container {
-    position: initial;
-    margin-top: calc(50vh - 300px); }
+  .main-welcome-picture-style {
+    width: 100px; }
   .ul-style {
     z-index: 10;
     width: 100%;
     margin: auto;
+    margin-top: -20px;
     list-style: none;
     text-align: center;
     background-color: #333333; }
@@ -343,3 +345,11 @@
     max-width: 100px; }
   .project-reuse-logo-style {
     max-width: 100px; } }
+
+@media only screen and (max-width: 400px) {
+  .font-style {
+    font-size: 14px; }
+  .main-title-style {
+    font-size: 1.5rem; }
+  .secondary-title-style {
+    font-size: 1.3rem; } }
